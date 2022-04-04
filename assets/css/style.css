@@ -1,0 +1,91 @@
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(/assets/images/background/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+
+header h1 {
+    text-align: center;
+    margin-top: 3rem;
+    color: yellowgreen;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 1.8);
+}
+
+/* ================ Main ================== */
+
+/* Container dos animais */
+
+.animals-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+.animals-container .animals {
+    /* background: white;
+    padding: .5rem;
+    border-radius: .6rem;
+    border: 2px solid black; */
+    transition: .5s;
+}
+
+.animals-container .animals:hover {
+    cursor: pointer;
+    filter: brightness(1.3);
+    transform: scale3d(1.04, 1.04, 1.04);
+}
+
+.animals-container .animals img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: .6rem;
+    border: 4px solid green;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+
+footer p{
+    text-align: center;
+    margin-top: 5rem;
+    color: white;
+    opacity: .3;
+    font-size: .8rem;
+}
+
+/* Medias */
+
+@media (max-width: 1000px) {
+    body{
+        overflow-y: scroll;
+        background-repeat: repeat-y;
+    }
+    .animals-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .animals-container{
+        grid-template-columns: auto auto;
+    }
+}
