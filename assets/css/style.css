@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url(/background-image.png);
+    background: url(../../background-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
