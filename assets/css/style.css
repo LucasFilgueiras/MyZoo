@@ -87,3 +87,9 @@ footer p{
         grid-template-columns: auto auto;
     }
 }
+
+@media (max-width: 520px) {
+    .animals-container{
+        grid-template-columns: auto;
+    }
+}
